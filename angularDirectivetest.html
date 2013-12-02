@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html ng-app="expander">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+.expander {
+    border: 1px solid black;
+    width: 250px;
+}
+
+.expander>.title {
+    background-color: black;
+    color: white;
+    padding: .1em .3em;
+    cursor: pointer;
+}
+
+.expander>.body {
+    padding: .1em .3em;
+}
+    </style>
+    <script type="text/javascript" src="http://local.tmall.net/angular/app/lib/angular/angular.min.js"></script>
+    <script type="text/javascript" src="register.js"></script>
+    <script type="text/javascript" src="directive.js"></script>
+    <script type="text/javascript" src="controller.js"></script>
+</head>
+<body>
+<div ng-controller="ctrl">
+    <expander expander-title="TT" class="expander">
+        {{text}}
+    </expander> 
+</div>
+</body>
+</html>
